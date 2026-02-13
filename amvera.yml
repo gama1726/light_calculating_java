@@ -1,14 +1,13 @@
+# Amvera Cloud: деплой из Docker (фронт + бэкенд в одном образе)
+# Документация: https://docs.amverum.com/
 meta:
-  environment: java
+  environment: docker
   toolchain:
-    name: maven
-    version: "17"
+    name: docker
+    version: "20"
 
 build:
-  requirementsPath: backend-java/pom.xml
   useCache: true
 
 run:
-  scriptName: backend-java/target/electrical-calculation-1.0.0.jar
-  command: java -jar backend-java/target/electrical-calculation-1.0.0.jar
   containerPort: "8000"

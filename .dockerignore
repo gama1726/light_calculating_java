@@ -1,0 +1,17 @@
+**/node_modules
+**/target
+**/dist
+.git
+.gitignore
+*.md
+*.pdf
+*.txt
+!backend-java/src/**/*.txt
+test-calculation-e2e.js
+start.bat
+start.ps1
+start.sh
+stop.bat
+stop.sh
+frontend/run.bat
+frontend/run.sh
