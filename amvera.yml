@@ -6,8 +6,5 @@ meta:
     name: docker
     version: "20"
 
-build:
-  useCache: true
-
 run:
   containerPort: "8000"
