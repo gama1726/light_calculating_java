@@ -1,10 +1,10 @@
 # Amvera Cloud: деплой из Docker (фронт + бэкенд в одном образе)
-# Документация: https://docs.amverum.com/
+# Документация: https://docs.amvera.ru/applications/configuration/docker.html
+# Секция build для Docker поддерживает только: dockerfile, skip (useCache не поддерживается)
 meta:
   environment: docker
   toolchain:
     name: docker
-    version: "20"
 
 run:
   containerPort: "8000"
