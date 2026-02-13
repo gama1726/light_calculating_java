@@ -1,0 +1,14 @@
+meta:
+  environment: java
+  toolchain:
+    name: maven
+    version: "17"
+
+build:
+  requirementsPath: backend-java/pom.xml
+  useCache: true
+
+run:
+  scriptName: backend-java/target/electrical-calculation-1.0.0.jar
+  command: java -jar backend-java/target/electrical-calculation-1.0.0.jar
+  containerPort: "8000"
