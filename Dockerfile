@@ -6,8 +6,8 @@ RUN npm ci
 COPY frontend/ ./
 RUN npm run build
 
-# ========== Stage 2: сборка бэкенда ==========
-FROM eclipse-temurin:17-jdk-alpine AS backend-build
+# ========== Stage 2: сборка бэкенда (образ с Maven + Java 17) ==========
+FROM maven:3.9-eclipse-temurin-17 AS backend-build
 WORKDIR /app
 COPY backend-java/pom.xml ./
 RUN mvn -B dependency:go-offline -DskipTests
